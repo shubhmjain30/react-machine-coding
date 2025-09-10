@@ -1,0 +1,64 @@
+.problem-wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	position: relative;
+}
+
+.problem-header-section {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	z-index: 10;
+}
+
+.back-arrow {
+	font-size: 24px;
+	color: #007bff;
+	text-decoration: none;
+	padding: 8px;
+	border-radius: 6px;
+	transition: background-color 0.2s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+}
+
+.back-arrow:hover {
+	background-color: #f8f9fa;
+}
+
+.problem-main-content {
+	padding-left: 60px; /* Make room for the back arrow */
+	padding-right: 60px; /* Keep content centered */
+}
+
+.problem-title {
+	margin: 0 0 8px 0;
+	color: #333;
+	font-size: 1.8rem;
+	line-height: 1.2;
+}
+
+.problem-description {
+	margin: 0 0 30px 0;
+	color: #666;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.problem-content .problem-container {
+	max-width: none;
+	margin: 0;
+	padding: 0;
+}
+
+.problem-content .problem-container h2 {
+	display: none; /* Hide duplicate titles */
+}
+
+.problem-content .problem-container p:first-of-type {
+	display: none; /* Hide duplicate descriptions */
+}

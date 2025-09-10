@@ -1,0 +1,45 @@
+.nested-content {
+	margin-left: 20px;
+}
+
+.file-item {
+	display: flex;
+	align-items: center;
+	padding: 4px 0;
+	color: #555;
+	font-family: "Courier New", monospace;
+}
+
+.folder-item {
+	display: flex;
+	align-items: center;
+	padding: 4px 0;
+	font-weight: bold;
+	color: #333;
+	font-family: "Courier New", monospace;
+}
+
+.folder-structure-container {
+	background-color: #f8f9fa;
+	border: 1px solid #e9ecef;
+	border-radius: 8px;
+	padding: 20px;
+	font-family: "Courier New", monospace;
+	font-size: 14px;
+}
+
+.problem-container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.problem-container h2 {
+	color: #333;
+	margin-bottom: 10px;
+}
+
+.problem-container p {
+	color: #666;
+	margin-bottom: 20px;
+}
