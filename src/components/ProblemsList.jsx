@@ -12,7 +12,11 @@ const ProblemsIndex = () => {
 
 			<div className="problems-grid">
 				{problems.map((problem) => (
-					<Link key={problem.id} to={`/${problem.id}`} className="problem-card-link">
+					<Link
+						key={problem.id}
+						to={`/${problem.id}`}
+						className="problem-card-link"
+					>
 						<div className="problem-card">
 							<div className="problem-header">
 								<h3>{problem.title}</h3>
