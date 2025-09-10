@@ -4,15 +4,6 @@ import UsersList from "./users-list/UsersList";
 
 export const problems = [
 	{
-		id: "folder-structure",
-		title: "Folder Structure Renderer",
-		description:
-			"Render a nested folder structure with files and folders using recursive components",
-		difficulty: "Easy",
-		topics: ["Recursion", "Component Composition", "Data Structures"],
-		component: FolderStructure,
-	},
-	{
 		id: "counter-app",
 		title: "Counter Application",
 		description:
@@ -34,5 +25,14 @@ export const problems = [
 			"Loading States",
 		],
 		component: UsersList,
+	},
+	{
+		id: "folder-structure",
+		title: "Folder Structure Renderer",
+		description:
+			"Render a nested folder structure with files and folders using recursive components",
+		difficulty: "Easy",
+		topics: ["Recursion", "Component Composition", "Data Structures"],
+		component: FolderStructure,
 	},
 ];
