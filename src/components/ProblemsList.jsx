@@ -12,37 +12,30 @@ const ProblemsIndex = () => {
 
 			<div className="problems-grid">
 				{problems.map((problem) => (
-					<div key={problem.id} className="problem-card">
-						<div className="problem-header">
-							<h3>{problem.title}</h3>
-							<span
-								className={`difficulty ${problem.difficulty.toLowerCase()}`}
-							>
-								{problem.difficulty}
-							</span>
-						</div>
-
-						<p className="problem-description">
-							{problem.description}
-						</p>
-
-						<div className="topics">
-							{problem.topics.map((topic) => (
-								<span key={topic} className="topic-tag">
-									{topic}
+					<Link key={problem.id} to={`/${problem.id}`} className="problem-card-link">
+						<div className="problem-card">
+							<div className="problem-header">
+								<h3>{problem.title}</h3>
+								<span
+									className={`difficulty ${problem.difficulty.toLowerCase()}`}
+								>
+									{problem.difficulty}
 								</span>
-							))}
-						</div>
+							</div>
 
-						<div className="problem-action">
-							<Link
-								to={`/${problem.id}`}
-								className="solve-button"
-							>
-								View Problem
-							</Link>
+							<p className="problem-description">
+								{problem.description}
+							</p>
+
+							<div className="topics">
+								{problem.topics.map((topic) => (
+									<span key={topic} className="topic-tag">
+										{topic}
+									</span>
+								))}
+							</div>
 						</div>
-					</div>
+					</Link>
 				))}
 			</div>
 		</div>

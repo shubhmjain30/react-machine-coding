@@ -5,7 +5,7 @@ import UsersList from "./users-list/UsersList";
 export const problems = [
 	{
 		id: "counter-app",
-		title: "Counter Application",
+		title: "Counter",
 		description:
 			"Build a counter with customizable step value and multiple operations",
 		difficulty: "Easy",
@@ -13,8 +13,8 @@ export const problems = [
 		component: CounterApp,
 	},
 	{
-		id: "users-list",
-		title: "Users List - API Integration",
+		id: "users",
+		title: "Users",
 		description:
 			"Fetch and display users from an API with loading states and error handling",
 		difficulty: "Easy",
@@ -28,7 +28,7 @@ export const problems = [
 	},
 	{
 		id: "folder-structure",
-		title: "Folder Structure Renderer",
+		title: "Folder Structure",
 		description:
 			"Render a nested folder structure with files and folders using recursive components",
 		difficulty: "Easy",
