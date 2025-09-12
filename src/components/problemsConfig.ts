@@ -42,7 +42,7 @@ export const problems: Problem[] = [
 		description:
 			"Create a traffic signal component with red, yellow, and green lights that change automatically based on a timer",
 		difficulty: "Easy",
-		topics: ["Timers", "useEffect Hook"],
+		topics: ["setTimeout", "useEffect Hook"],
 		component: TrafficSignal,
 	},
 	{
