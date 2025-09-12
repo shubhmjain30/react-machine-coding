@@ -3,7 +3,16 @@ import FolderStructure from "./folder-structure/FolderStructure";
 import TrafficSignal from "./traffic-signal/TrafficSignal";
 import UsersList from "./users-list/UsersList";
 
-export const problems = [
+type Problem = {
+	id: string;
+	title: string;
+	description: string;
+	difficulty: "Easy" | "Medium" | "Hard";
+	topics: string[];
+	component: React.ComponentType;
+};
+
+export const problems: Problem[] = [
 	{
 		id: "counter-app",
 		title: "Counter",
