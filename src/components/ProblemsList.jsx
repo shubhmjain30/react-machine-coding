@@ -3,6 +3,7 @@ import "./problems-list.css";
 import { problems } from "./problemsConfig";
 
 const ProblemsIndex = () => {
+	console.log("Working");
 	return (
 		<div className="problems-index">
 			<header className="header">

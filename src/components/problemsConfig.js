@@ -1,5 +1,6 @@
 import CounterApp from "./counter-app/CounterApp";
 import FolderStructure from "./folder-structure/FolderStructure";
+import TrafficSignal from "./traffic-signal/TrafficSignal";
 import UsersList from "./users-list/UsersList";
 
 export const problems = [
@@ -25,6 +26,15 @@ export const problems = [
 			"Loading States",
 		],
 		component: UsersList,
+	},
+	{
+		id: "signal",
+		title: "Traffic Signal",
+		description:
+			"Create a traffic signal component with red, yellow, and green lights that change automatically based on a timer",
+		difficulty: "Easy",
+		topics: ["Timers", "useEffect Hook"],
+		component: TrafficSignal,
 	},
 	{
 		id: "folder-structure",

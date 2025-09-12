@@ -1,0 +1,46 @@
+.signal-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f0f0f0;
+}
+
+.signal-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 80px;
+	background-color: black;
+	padding: 8px;
+	border-radius: 16px;
+}
+
+.signal-light {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	margin: 8px 0;
+}
+
+.red {
+	background-color: rgb(255, 0, 0);
+}
+
+.yellow {
+	background-color: rgb(226, 226, 25);
+}
+
+.green {
+	background-color: rgb(27, 203, 27);
+}
+
+.active {
+	box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.7);
+	animation: glow 1s infinite alternate;
+}
+
+.inactive {
+	opacity: 0.4;
+}
