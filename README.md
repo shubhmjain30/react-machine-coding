@@ -2,6 +2,16 @@
 
 A collection of React machine coding problems for interview preparation. Each problem is organized in its own module with components, styles, and documentation.
 
+🔗 **Live Demo**: [View the app](https://iridescent-pithivier-ec3ae5.netlify.app/)
+
+## Features
+
+-   Carefully curated problems covering common interview scenarios
+-   Clean and responsive UI
+-   Modular and reusable components
+-   Styled with CSS modules for better organization
+-   Easy to extend with new problems
+
 ## Project Structure
 
 ```
@@ -11,7 +21,7 @@ src/
 │   ├── problems-list.css       # Styles for problems listing
 │   ├── ProblemWrapper.jsx      # Wrapper component with back button
 │   ├── problem-wrapper.css     # Wrapper styles
-│   ├── problemsConfig.js       # 🔥 CENTRAL CONFIG for all problems
+│   ├── problemsConfig.js       # Central configuration for all problems
 │   ├── folder-structure/       # Example problem folder
 │   │   ├── FolderStructure.jsx # Main problem component
 │   │   ├── RenderFs.jsx        # Sub-component
@@ -50,9 +60,9 @@ src/
 
 ## Adding New Problems
 
-**🎉 Now it's super easy!** The app is completely config-based. To add a new problem:
+The app uses a configuration-based approach. To add a new problem:
 
-1. **Create a new folder** in `src/components/` with a descriptive name (e.g., `todo-app`, `infinite-scroll`)
+1. Create a new folder in `src/components/` with a descriptive name (e.g., `todo-app`, `infinite-scroll`)
 
 2. **Create the main component** for your problem (e.g., `TodoApp.jsx`)
 
@@ -125,14 +135,14 @@ npm run build
 -   **Table with Sorting** - Data manipulation, performance
 -   **Chat Interface** - Real-time updates, message handling
 
-## Features
+## Key Features
 
--   ✅ Clean, organized structure for multiple problems
--   ✅ React Router for navigation
--   ✅ Responsive design
--   ✅ Problem categorization and difficulty levels
--   ✅ Easy to extend with new problems
--   ✅ Modern React patterns and best practices
+-   Clean, organized structure for multiple problems
+-   React Router for navigation
+-   Responsive design
+-   Problem categorization and difficulty levels
+-   Easy to extend with new problems
+-   Modern React patterns and best practices
 
 ## Tech Stack
 
