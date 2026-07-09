@@ -1,5 +1,6 @@
 import CounterApp from "./counter-app/CounterApp";
 import FolderStructure from "./folder-structure/FolderStructure";
+import TicTacToe from "./tic-tac-toe/TicTacToe";
 import TrafficSignal from "./traffic-signal/TrafficSignal";
 import UsersList from "./users-list/UsersList";
 
@@ -53,5 +54,14 @@ export const problems: Problem[] = [
 		difficulty: "Easy",
 		topics: ["Recursion", "Component Composition", "Data Structures"],
 		component: FolderStructure,
+	},
+	{
+		id: "tic-tac-toe",
+		title: "Tic Tac Toe",
+		description:
+			"Build a Tic Tac Toe game with a 3x3 grid, player turns, and win/draw detection",
+		difficulty: "Medium",
+		topics: ["Game Logic", "State Management", "Event Handling"],
+		component: TicTacToe,
 	},
 ];
