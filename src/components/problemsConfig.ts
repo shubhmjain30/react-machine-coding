@@ -1,5 +1,6 @@
 import CounterApp from "./counter-app/CounterApp";
 import FolderStructure from "./folder-structure/FolderStructure";
+import ProgressBar from "./progress-bar/ProgressBar";
 import TicTacToe from "./tic-tac-toe/TicTacToe";
 import TrafficSignal from "./traffic-signal/TrafficSignal";
 import UsersList from "./users-list/UsersList";
@@ -63,5 +64,13 @@ export const problems: Problem[] = [
 		difficulty: "Medium",
 		topics: ["Game Logic", "State Management", "Event Handling"],
 		component: TicTacToe,
+	},
+	{
+		id: "progress-bar",
+		title: "Progress Bar",
+		description: "Build a progress bar that fills up over time",
+		difficulty: "Easy",
+		topics: ["CSS Animations", "State Management", "useEffect Hook"],
+		component: ProgressBar,
 	},
 ];
