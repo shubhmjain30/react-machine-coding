@@ -2,17 +2,16 @@
 import "./grid-lights.css";
 
 interface CellsProps {
-	key: number;
-	shape: "circle" | "square" | "rounded";
+	shape?: "circle" | "square" | "rounded";
 	isActive: boolean;
 	onClick: () => void;
 }
 
-const Cell = ({ shape, isActive, onClick }: CellsProps) => {
+const Cell = ({ shape = "rounded", isActive, onClick }: CellsProps) => {
 	return (
 		<div
 			className={`cell ${shape} ${isActive ? "active" : ""}`}
-			onClick={onClick}
+			onClick={!isActive ? onClick : undefined}
 		></div>
 	);
 };
