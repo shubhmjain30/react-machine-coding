@@ -2,6 +2,7 @@ import CounterApp from "./counter-app/CounterApp";
 import FolderStructure from "./folder-structure/FolderStructure";
 import ProgressBar from "./progress-bar/ProgressBar";
 import TicTacToe from "./tic-tac-toe/TicTacToe";
+import GridLights from "./grid-lights/GridLights";
 import TrafficSignal from "./traffic-signal/TrafficSignal";
 import UsersList from "./users-list/UsersList";
 
@@ -72,5 +73,14 @@ export const problems: Problem[] = [
 		difficulty: "Easy",
 		topics: ["CSS Animations", "State Management", "useEffect Hook"],
 		component: ProgressBar,
+	},
+	{
+		id: "grid-lights",
+		title: "Grid Lights",
+		description:
+			"Build a grid of light cells where you can click on cells to activate them, turning them green. When all the cells are activated, all the cells will be deactivated one by one in the reverse order they were activated with 300ms interval in between them.",
+		difficulty: "Easy",
+		topics: ["State Management", "2-D Array", "Stack"],
+		component: GridLights,
 	},
 ];
