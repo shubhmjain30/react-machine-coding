@@ -1,4 +1,5 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { getProblemFiles } from "./components/codeFiles";
 import { problems } from "./components/problemsConfig";
 import ProblemsIndex from "./components/ProblemsList";
 import ProblemWrapper from "./components/ProblemWrapper";
@@ -21,6 +22,7 @@ function App() {
 										<ProblemWrapper
 											title={problem.title}
 											description={problem.description}
+											files={getProblemFiles(problem.dir)}
 										>
 											<Component />
 										</ProblemWrapper>

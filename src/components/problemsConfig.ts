@@ -1,13 +1,14 @@
 import CounterApp from "./counter-app/CounterApp";
 import FolderStructure from "./folder-structure/FolderStructure";
+import GridLights from "./grid-lights/GridLights";
 import ProgressBar from "./progress-bar/ProgressBar";
 import TicTacToe from "./tic-tac-toe/TicTacToe";
-import GridLights from "./grid-lights/GridLights";
 import TrafficSignal from "./traffic-signal/TrafficSignal";
 import UsersList from "./users-list/UsersList";
 
 type Problem = {
 	id: string;
+	dir: string;
 	title: string;
 	description: string;
 	difficulty: "Easy" | "Medium" | "Hard";
@@ -18,6 +19,7 @@ type Problem = {
 export const problems: Problem[] = [
 	{
 		id: "counter-app",
+		dir: "counter-app",
 		title: "Counter",
 		description:
 			"Build a counter with customizable step value and multiple operations",
@@ -27,6 +29,7 @@ export const problems: Problem[] = [
 	},
 	{
 		id: "users",
+		dir: "users-list",
 		title: "Users",
 		description:
 			"Fetch and display users from an API with loading states and error handling",
@@ -40,7 +43,8 @@ export const problems: Problem[] = [
 		component: UsersList,
 	},
 	{
-		id: "signal",
+		id: "traffic-signal",
+		dir: "traffic-signal",
 		title: "Traffic Signal",
 		description:
 			"Create a traffic signal component with red, yellow, and green lights that change automatically based on a timer",
@@ -50,6 +54,7 @@ export const problems: Problem[] = [
 	},
 	{
 		id: "folder-structure",
+		dir: "folder-structure",
 		title: "Folder Structure",
 		description:
 			"Render a nested folder structure with files and folders using recursive components",
@@ -59,6 +64,7 @@ export const problems: Problem[] = [
 	},
 	{
 		id: "tic-tac-toe",
+		dir: "tic-tac-toe",
 		title: "Tic Tac Toe",
 		description:
 			"Build a Tic Tac Toe game with a 3x3 grid, player turns, and win/draw detection",
@@ -68,6 +74,7 @@ export const problems: Problem[] = [
 	},
 	{
 		id: "progress-bar",
+		dir: "progress-bar",
 		title: "Progress Bar",
 		description: "Build a progress bar that fills up over time",
 		difficulty: "Easy",
@@ -76,6 +83,7 @@ export const problems: Problem[] = [
 	},
 	{
 		id: "grid-lights",
+		dir: "grid-lights",
 		title: "Grid Lights",
 		description:
 			"Build a grid of light cells where you can click on cells to activate them, turning them green. When all the cells are activated, all the cells will be deactivated one by one in the reverse order they were activated with 300ms interval in between them.",

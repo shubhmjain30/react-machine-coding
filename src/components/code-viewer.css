@@ -1,0 +1,62 @@
+.code-viewer {
+	border: 1px solid #e1e4e8;
+	border-radius: 8px;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.code-viewer-file-tabs {
+	display: flex;
+	gap: 4px;
+	padding: 8px;
+	background-color: #f6f8fa;
+	border-bottom: 1px solid #e1e4e8;
+	overflow-x: auto;
+}
+
+.code-viewer-file-tab {
+	border: none;
+	background: none;
+	padding: 6px 12px;
+	border-radius: 6px;
+	font-size: 0.85rem;
+	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+	color: #666;
+	cursor: pointer;
+	white-space: nowrap;
+	transition: background-color 0.15s, color 0.15s;
+}
+
+.code-viewer-file-tab:hover {
+	background-color: #eaecef;
+}
+
+.code-viewer-file-tab.active {
+	background-color: #fff;
+	color: #333;
+	font-weight: 600;
+	box-shadow: inset 0 0 0 1px #e1e4e8;
+}
+
+.code-viewer-pre {
+	margin: 0;
+	padding: 16px;
+	overflow-x: auto;
+	font-size: 0.85rem;
+	line-height: 1.6;
+}
+
+.code-viewer-line-number {
+	display: inline-block;
+	width: 32px;
+	margin-right: 16px;
+	text-align: right;
+	color: #b3b9c2;
+	user-select: none;
+}
+
+.code-viewer-empty {
+	padding: 24px;
+	color: #666;
+	text-align: center;
+}
