@@ -1,6 +1,7 @@
 import CounterApp from "./counter-app/CounterApp";
 import FolderStructure from "./folder-structure/FolderStructure";
 import GridLights from "./grid-lights/GridLights";
+import OtpInput from "./otp-input/OtpInput";
 import ProgressBar from "./progress-bar/ProgressBar";
 import TicTacToe from "./tic-tac-toe/TicTacToe";
 import TrafficSignal from "./traffic-signal/TrafficSignal";
@@ -90,5 +91,15 @@ export const problems: Problem[] = [
 		difficulty: "Easy",
 		topics: ["State Management", "2-D Array", "Stack"],
 		component: GridLights,
+	},
+	{
+		id: "otp-input",
+		dir: "otp-input",
+		title: "OTP Input",
+		description:
+			"Build an OTP input component with 6 input fields that automatically focuses on the next field when a digit is entered and allows backspacing to the previous field.",
+		difficulty: "Medium",
+		topics: ["State Management", "Refs", "Event Handling"],
+		component: OtpInput,
 	},
 ];
