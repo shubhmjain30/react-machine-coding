@@ -98,7 +98,7 @@ export const problems: Problem[] = [
 		title: "OTP Input",
 		description:
 			"Build an OTP input component with 6 input fields that automatically focuses on the next field when a digit is entered and allows backspacing to the previous field.",
-		difficulty: "Medium",
+		difficulty: "Easy",
 		topics: ["State Management", "Refs", "Event Handling"],
 		component: OtpInput,
 	},
