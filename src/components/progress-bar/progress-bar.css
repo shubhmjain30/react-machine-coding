@@ -1,0 +1,41 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: #f0f0f0;
+}
+
+.progress-bar {
+	width: 640px;
+	height: 36px;
+	border: 1px solid #555;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.progress-bar-track {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.progress-fill {
+	width: 100%;
+	height: 100%;
+	background: greenyellow;
+	transform-origin: left center;
+	transition: transform 200ms linear;
+}
+
+.progress-bar-track span {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	font-weight: 600;
+}
