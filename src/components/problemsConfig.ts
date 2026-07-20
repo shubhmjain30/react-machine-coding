@@ -112,4 +112,14 @@ export const problems: Problem[] = [
 		topics: ["Concurrency", "Promises", "Async/Await"],
 		component: () => null, // Placeholder component
 	},
+	{
+		id: "debounce-throttle",
+		dir: "debounce-throttle",
+		title: "Debounce and Throttle",
+		description:
+			"Implement debounce and throttle functions to control the rate of function execution.",
+		difficulty: "Easy",
+		topics: ["Debouncing", "Throttling", "Event Handling"],
+		component: () => null, // Placeholder component
+	},
 ];
