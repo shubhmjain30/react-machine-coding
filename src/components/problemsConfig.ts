@@ -102,4 +102,14 @@ export const problems: Problem[] = [
 		topics: ["State Management", "Refs", "Event Handling"],
 		component: OtpInput,
 	},
+	{
+		id: "async-pool",
+		dir: "async-pool",
+		title: "Async Pool",
+		description:
+			"Implement an async pool function that limits the number of concurrent promises being executed.",
+		difficulty: "Medium",
+		topics: ["Concurrency", "Promises", "Async/Await"],
+		component: () => null, // Placeholder component
+	},
 ];
