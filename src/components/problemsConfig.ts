@@ -1,7 +1,9 @@
 import { lazy } from "react";
 
 const CounterApp = lazy(() => import("./counter-app/CounterApp"));
-const FolderStructure = lazy(() => import("./folder-structure/FolderStructure"));
+const FolderStructure = lazy(
+	() => import("./folder-structure/FolderStructure"),
+);
 const GridLights = lazy(() => import("./grid-lights/GridLights"));
 const OtpInput = lazy(() => import("./otp-input/OtpInput"));
 const ProgressBar = lazy(() => import("./progress-bar/ProgressBar"));
@@ -122,6 +124,16 @@ export const problems: Problem[] = [
 			"Implement debounce and throttle functions to control the rate of function execution.",
 		difficulty: "Easy",
 		topics: ["Debouncing", "Throttling", "Event Handling"],
+		component: () => null, // Placeholder component
+	},
+	{
+		id: "custom-promise",
+		dir: "custom-promise",
+		title: "Custom Promise",
+		description:
+			"Implement a custom Promise class that mimics the behavior of native JavaScript Promises.",
+		difficulty: "Hard",
+		topics: ["Promises", "Asynchronous Programming", "JavaScript"],
 		component: () => null, // Placeholder component
 	},
 ];
