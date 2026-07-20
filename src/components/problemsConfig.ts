@@ -1,11 +1,13 @@
-import CounterApp from "./counter-app/CounterApp";
-import FolderStructure from "./folder-structure/FolderStructure";
-import GridLights from "./grid-lights/GridLights";
-import OtpInput from "./otp-input/OtpInput";
-import ProgressBar from "./progress-bar/ProgressBar";
-import TicTacToe from "./tic-tac-toe/TicTacToe";
-import TrafficSignal from "./traffic-signal/TrafficSignal";
-import UsersList from "./users-list/UsersList";
+import { lazy } from "react";
+
+const CounterApp = lazy(() => import("./counter-app/CounterApp"));
+const FolderStructure = lazy(() => import("./folder-structure/FolderStructure"));
+const GridLights = lazy(() => import("./grid-lights/GridLights"));
+const OtpInput = lazy(() => import("./otp-input/OtpInput"));
+const ProgressBar = lazy(() => import("./progress-bar/ProgressBar"));
+const TicTacToe = lazy(() => import("./tic-tac-toe/TicTacToe"));
+const TrafficSignal = lazy(() => import("./traffic-signal/TrafficSignal"));
+const UsersList = lazy(() => import("./users-list/UsersList"));
 
 type Problem = {
 	id: string;

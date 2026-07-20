@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { getProblemFiles } from "./components/codeFiles";
 import { problems } from "./components/problemsConfig";
@@ -24,7 +25,9 @@ function App() {
 											description={problem.description}
 											files={getProblemFiles(problem.dir)}
 										>
-											<Component />
+											<Suspense fallback={<div>Loading...</div>}>
+												<Component />
+											</Suspense>
 										</ProblemWrapper>
 									}
 								/>
