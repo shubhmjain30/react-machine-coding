@@ -1,10 +1,16 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import CodeViewer from "./CodeViewer";
+import ConsolePanel from "./console-panel/ConsolePanel";
+import { clearEntries } from "./console-panel/consoleStore";
 import "./problem-wrapper.css";
 
 const ProblemWrapper = ({ title, description, files, children }) => {
 	const [view, setView] = useState("preview");
+
+	useEffect(() => {
+		clearEntries();
+	}, [title]);
 
 	return (
 		<div className="problem-wrapper">
@@ -39,6 +45,7 @@ const ProblemWrapper = ({ title, description, files, children }) => {
 				<div className="problem-content">
 					{view === "preview" ? children : <CodeViewer files={files} />}
 				</div>
+				{view === "preview" && <ConsolePanel />}
 			</div>
 		</div>
 	);

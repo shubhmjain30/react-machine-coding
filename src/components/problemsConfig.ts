@@ -1,6 +1,7 @@
 import { lazy } from "react";
 
 const CounterApp = lazy(() => import("./counter-app/CounterApp"));
+const CustomPromise = lazy(() => import("./custom-promise/CustomPromise"));
 const FolderStructure = lazy(
 	() => import("./folder-structure/FolderStructure"),
 );
@@ -134,6 +135,6 @@ export const problems: Problem[] = [
 			"Implement a custom Promise class that mimics the behavior of native JavaScript Promises.",
 		difficulty: "Hard",
 		topics: ["Promises", "Asynchronous Programming", "JavaScript"],
-		component: () => null, // Placeholder component
+		component: CustomPromise,
 	},
 ];
