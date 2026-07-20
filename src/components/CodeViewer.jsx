@@ -1,5 +1,5 @@
-import { useState } from "react";
 import { Highlight, themes } from "prism-react-renderer";
+import { useState } from "react";
 import "./code-viewer.css";
 
 const CodeViewer = ({ files }) => {
@@ -34,13 +34,27 @@ const CodeViewer = ({ files }) => {
 				code={activeFile.code.trim()}
 				language={activeFile.language}
 			>
-				{({ className, style, tokens, getLineProps, getTokenProps }) => (
-					<pre className={`code-viewer-pre ${className}`} style={style}>
+				{({
+					className,
+					style,
+					tokens,
+					getLineProps,
+					getTokenProps,
+				}) => (
+					<pre
+						className={`code-viewer-pre ${className}`}
+						style={style}
+					>
 						{tokens.map((line, i) => (
 							<div key={i} {...getLineProps({ line })}>
-								<span className="code-viewer-line-number">{i + 1}</span>
+								<span className="code-viewer-line-number">
+									{i + 1}
+								</span>
 								{line.map((token, key) => (
-									<span key={key} {...getTokenProps({ token })} />
+									<span
+										key={key}
+										{...getTokenProps({ token })}
+									/>
 								))}
 							</div>
 						))}

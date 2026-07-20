@@ -1,13 +1,14 @@
-const rawModules = import.meta.glob("./*/*.{jsx,tsx,ts,css}", {
+const rawModules = import.meta.glob("./*/*.{js,jsx,ts,tsx,css}", {
 	eager: true,
 	query: "?raw",
 	import: "default",
 });
 
 const LANGUAGE_BY_EXT = {
+	js: "jsx",
 	jsx: "jsx",
-	tsx: "tsx",
 	ts: "tsx",
+	tsx: "tsx",
 	css: "css",
 };
 
@@ -25,7 +26,11 @@ for (const [path, code] of Object.entries(rawModules)) {
 	const ext = name.split(".").pop();
 
 	if (!filesByDir[dir]) filesByDir[dir] = [];
-	filesByDir[dir].push({ name, code, language: LANGUAGE_BY_EXT[ext] ?? "jsx" });
+	filesByDir[dir].push({
+		name,
+		code,
+		language: LANGUAGE_BY_EXT[ext] ?? "jsx",
+	});
 }
 
 for (const [dir, files] of Object.entries(filesByDir)) {
