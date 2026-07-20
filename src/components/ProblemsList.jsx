@@ -7,7 +7,7 @@ const ProblemsIndex = () => {
 		<div className="problems-index">
 			<header className="header">
 				<h1>React Machine Coding Problems</h1>
-				<p>Practice React concepts with real-world coding challenges</p>
+				{/* <p>Practice React concepts with real-world coding challenges</p> */}
 			</header>
 
 			<div className="problems-grid">
