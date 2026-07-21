@@ -1,0 +1,70 @@
+.app-shell-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: #eef1f6;
+	font-family:
+		-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	color: #1f2430;
+}
+
+.app-shell-grid {
+	display: grid;
+	grid-template-columns: 180px 1fr;
+	grid-template-rows: 48px 1fr 40px;
+	grid-template-areas: "topbar topbar" "sidebar main-content" "footer footer";
+	width: 640px;
+	height: 400px;
+	gap: 1px;
+	background-color: #dde2eb;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 20px 40px rgba(31, 36, 48, 0.12);
+}
+
+.app-shell-topbar {
+	background-color: #ffffff;
+	grid-area: topbar;
+	display: flex;
+	align-items: center;
+	padding: 0 16px;
+	font-weight: 600;
+	font-size: 0.9rem;
+	letter-spacing: 0.01em;
+}
+
+.app-shell-sidebar {
+	background-color: #1f2430;
+	color: #c7cbd6;
+	grid-area: sidebar;
+	padding: 14px 12px;
+	font-size: 0.85rem;
+}
+
+.app-shell-main {
+	background-color: #f7f8fa;
+	grid-area: main-content;
+	padding: 16px;
+	font-size: 0.9rem;
+}
+
+.app-shell-footer {
+	background-color: #ffffff;
+	color: #7b8194;
+	grid-area: footer;
+	display: flex;
+	align-items: center;
+	padding: 0 16px;
+	font-size: 0.75rem;
+}
+
+@media (max-width: 40em) {
+	.app-shell-sidebar {
+		display: none;
+	}
+	.app-shell-grid {
+		width: 90vw;
+		grid-template-areas: "topbar" "main-content" "footer";
+	}
+}

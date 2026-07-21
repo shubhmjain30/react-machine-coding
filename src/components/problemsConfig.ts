@@ -1,5 +1,6 @@
 import { lazy } from "react";
 
+const AppShell = lazy(() => import("./app-shell/AppShell"));
 const CounterApp = lazy(() => import("./counter-app/CounterApp"));
 const CustomPromise = lazy(() => import("./custom-promise/CustomPromise"));
 const FolderStructure = lazy(
@@ -136,5 +137,14 @@ export const problems: Problem[] = [
 		difficulty: "Hard",
 		topics: ["Promises", "Asynchronous Programming", "JavaScript"],
 		component: CustomPromise,
+	},
+	{
+		id: "app-shell",
+		dir: "app-shell",
+		title: "App Shell",
+		description: "Implement an app shell layout using css grid",
+		difficulty: "Easy",
+		topics: ["CSS Grid", "Layout", "Responsive Design"],
+		component: AppShell,
 	},
 ];
